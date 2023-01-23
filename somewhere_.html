@@ -1,0 +1,179 @@
+<html>
+<!-- name later -->
+	<head>
+		<title> Lucid_6f00ff - Somewhere_ </title>
+		<link rel="shortcut icon" href="images/Alone_2.png"/>
+		<link rel="stylesheet" href="css/main.css">
+
+    <style>
+      * {box-sizing: border-box;}
+      body {font-family: Verdana, sans-serif;}
+      .mySlides1 {display: none;}
+      .mySlides2 {display: none;}
+      
+/* slideshow container */
+      .slideshow-container {
+        max-width: 40%;
+        position: relative;
+        margin: auto;
+        display: inline-block;
+      }
+/* screen-wipe color */
+      .active {
+        background-color: #717171;
+      } 
+/* fading animation */
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+/* screen-wipe opacity */
+      @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+    </style>
+	</head>
+
+<!-- webpage links -->
+	<body> 
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="projects.html">Projects</a>
+			<a href="about.html">About</a>
+        </nav>
+<!-- background image -->
+		<style>
+			body {
+				background-image: url(images/website_background.png);
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-size: 100% 100%;
+			}
+		</style>
+		<br>
+<!-- top text -->
+	<h1 style="text-align: center;">Somewhere_</h1>
+	<p style="font-size: small;
+	text-align: center;">
+		Life in a desert.
+	</p>
+	<br><br>
+<!-- slideshow stuff -->
+		<div id="center">
+		<div class="slideshow-container">
+			<div class="mySlides1">
+			<div class="mySlides fade">
+				<div class="numbertext">characters</div>
+				<img src="images/Call.png" style="width: 75%">
+			</div>
+			</div>
+			<div class="mySlides1">
+			<div class="mySlides fade">
+				<div class="numbertext">characters</div>
+				<img src="images/Duality.png" style="width:75%">
+			</div>
+			</div>
+			<div class="mySlides1">
+			<div class="mySlides fade">
+				<div class="numbertext">characters</div>
+				<img src="images/Trap.png" style="width:75%">
+			</div>
+			</div>
+			<div class="mySlides1">
+			<div class="mySlides fade">
+				<div class="numbertext">characters</div>
+				<img src="images/Awakening.png" style="width:75%">
+			</div>
+			</div>
+			<div class="mySlides1">
+			<div class="mySlides fade">
+				<div class="numbertext">characters</div>
+				<img src="images/Direction.png" style="width:75%">
+			</div>
+			</div>
+		</div>
+	<!-- <br> -->
+		<div class="slideshow-container">
+			<div class="mySlides2">
+			<div class="mySlides fade">
+				<div class="numbertext">locations</div>
+				<img src="images/Throne Room.png" style="width:75%">
+			</div>
+			</div>
+			<div class="mySlides2">
+			<div class="mySlides fade">
+				<div class="numbertext">locations</div>
+				<img src="images/Cavern.png" style="width:75%">
+			</div>
+			</div>
+			<div class="mySlides2">
+			<div class="mySlides fade">
+				<div class="numbertext">locations</div>
+				<img src="images/Viewpoint.png" style="width:75%">
+			</div>
+			</div>
+			<div class="mySlides2">
+			<div class="mySlides fade">
+				<div class="numbertext">locations</div>
+				<img src="images/Nomad Castle.png" style="width:75%">
+			</div>
+			</div>
+		</div>
+		</div>
+	<br>
+
+	<div style="text-align:center">
+		<span class="dot"></span> 
+		<span class="dot"></span> 
+		<span class="dot"></span> 
+		<span class="dot"></span> 
+	</div>
+
+	<script>
+	let slideIndex1 = 0;
+	showSlides1();
+
+	function showSlides1() {
+	let i;
+	let slides = document.getElementsByClassName("mySlides1");
+
+	for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	}
+	slideIndex1++;  
+	if (slideIndex1 > slides.length) {slideIndex1 = 1}  
+	slides[slideIndex1-1].style.display = "block";  
+
+	setTimeout(showSlides1, 4000); // Change image every 4.5 seconds
+	}
+
+
+	let slideIndex = 0;
+	showSlides();
+
+	function showSlides() {
+	let i;
+	let slides = document.getElementsByClassName("mySlides2");
+	
+	for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	}
+	slideIndex++;   
+	if (slideIndex > slides.length) {slideIndex = 1}
+	slides[slideIndex-1].style.display = "block";
+	setTimeout(showSlides, 4500); // Change image every 4.5 seconds
+	}
+    </script>
+    <!-- bottom text -->
+		<p style="background-image: url('images/LucidLogo3.png');
+		font-size: small;
+		text-align: center;">
+			Somewhere_ is an ongoing series about life in a desert. <br>
+		</p>
+
+        <div id="center">
+			<a href="projects.html"style="text-decoration:none">back</a>
+		</div> 
+	</body>
+</html>
